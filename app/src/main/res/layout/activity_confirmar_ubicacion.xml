@@ -24,35 +24,50 @@
         android:id="@+id/textView26"
         android:layout_width="263dp"
         android:layout_height="40dp"
-        android:text="La ubicación es correcta, da click en aceptar"
-        app:layout_constraintBottom_toTopOf="@+id/btnAceptaUbicacion"
+        android:layout_marginBottom="124dp"
+        android:text="Por favor, permite activar tu GPS, para confirmar tu ubicación"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarProceso"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
 
     <Button
-        android:id="@+id/btnAceptaUbicacion"
+        android:id="@+id/btnIniciarProceso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="irEstadoIncial"
-        android:text="Aceptar"
+        android:text="Iniciar Proceso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
+        android:layout_height="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225"
+        app:srcCompat="@drawable/minimapa1" />
+
+    <Button
+        android:id="@+id/btnActivarGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ActivarGPS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="286dp"
-        android:layout_height="433dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288"
-        app:srcCompat="@drawable/minimapa1" />
+        app:layout_constraintVertical_bias="0.749" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,5 +28,9 @@ public class trabajosDelDia extends AppCompatActivity {
         Intent intent = new Intent(this, confirmarUbicacion.class);
         startActivity(intent);
     }
+    public void irRegistroTareas(View view) {
+        Intent intent = new Intent(this, registroTareas.class);
+        startActivity(intent);
+    }
 
 }

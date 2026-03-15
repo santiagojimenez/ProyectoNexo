@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nexo">
         <activity
+            android:name=".registroTareas"
+            android:exported="false" />
+        <activity
             android:name=".firmaCliente"
             android:exported="false" />
         <activity
