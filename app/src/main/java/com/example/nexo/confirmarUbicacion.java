@@ -1,6 +1,7 @@
 package com.example.nexo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -29,4 +30,9 @@ public class confirmarUbicacion extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void abrirMapa (View view) {
+        Intent m= new Intent(Intent.ACTION_VIEW, Uri.parse("geo:4.597389078326502,-74.07593126233013"));
+        startActivity(m);
+    }
 }

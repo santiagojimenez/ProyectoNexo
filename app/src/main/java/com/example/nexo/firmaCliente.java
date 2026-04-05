@@ -3,6 +3,7 @@ package com.example.nexo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class firmaCliente extends AppCompatActivity {
     public void irTrabajosDelDiaDeNuevo(View view) {
         Intent intent = new Intent(this, trabajosDelDia.class);
         startActivity(intent);
+        Toast.makeText(this, "Información Guardada", Toast.LENGTH_SHORT).show();
     }
 
 }

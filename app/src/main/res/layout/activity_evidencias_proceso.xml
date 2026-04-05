@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="121dp"
-        android:layout_height="115dp"
+        android:layout_width="129dp"
+        android:layout_height="119dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,21 +43,22 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="129dp"
-        android:layout_height="139dp"
+        android:layout_width="155dp"
+        android:layout_height="86dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692"
+        app:layout_constraintVertical_bias="0.66"
         app:srcCompat="@drawable/audio1" />
 
     <Button
         android:id="@+id/btnEvidenciasFotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cargar Imagenes"
+        android:onClick="tomarEvidencias"
+        android:text="Tomar Foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,13 +68,13 @@
         android:id="@+id/btnEvidenciasAudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cargar Audios"
+        android:onClick="iniciarGrabacion"
+        android:text="Grabar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintVertical_bias="0.795" />
 
     <Button
         android:id="@+id/btnEstadoFinal"
@@ -83,9 +84,35 @@
         android:text="Estado Final"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.953" />
+
+    <Button
+        android:id="@+id/btnReproducirAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reproducrAudio"
+        android:text="Reproducir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <Button
+        android:id="@+id/btnDetenerAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="detenerGrabacion"
+        android:text="Detener"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
